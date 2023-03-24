@@ -42,7 +42,6 @@ elif score1 == 22:
 final_score1 = 0
 
 def add_score(digit_score):
-    global score1
     global final_score1
     value_len = len(str(digit_score))
     for i in range(value_len):
