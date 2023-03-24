@@ -12,21 +12,21 @@ name1_score = 0
 name2_score = 0
 
 
-def calc_name1_score(name,score,alphabets):
+def calc_name1_score(name,alphabets):
     global name1_score
     for letter in name:
         value = alphabets[letter]
         name1_score = name1_score + value
 
-def calc_name2_score(name,score,alphabets):
+def calc_name2_score(name,alphabets):
     global name2_score
     for letter in name:
         value = alphabets[letter]
         name2_score = name2_score + value
 
-calc_name1_score(name1,name1_score,alphabets)
+calc_name1_score(name1,alphabets)
 
-calc_name2_score(name2,name2_score,alphabets)
+calc_name2_score(name2,alphabets)
 
 score1 = name1_score + name2_score
 
